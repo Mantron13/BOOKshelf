@@ -1,0 +1,20 @@
+img{
+  width:100%;
+  max-width:100%;
+}
+
+.navbar{
+  position:fixed;
+  width:100%;
+  background-color:#000;
+  z-index:10;
+  border-radius:0;
+  border-color:transparent;
+}
+.navbar-default .navbar-nav > li > a{
+  color:#fff;
+  
+}
+	.vd{
+		margin-top: 20px;
+	}

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Booken</title>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'><link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Logo</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+        <li><a href="#about">About Us</a></li>
+        
+      </ul>
+      <form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SignUp <span class="caret"></span></a>
+         <ul class="dropdown-menu dropdown-lr animated flipInX" role="menu" style="width: 300px">
+            <div class="col-lg-12">
+              <div class="text-center">
+                <h3><b>Register</b></h3></div>
+              <form id="ajax-register-form" action="http://phpoll.com/register/process" method="post" role="form" autocomplete="off">
+                <div class="form-group">
+                  <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Username" value="">
+                </div>
+                <div class="form-group">
+                  <input type="email" name="email" id="email" tabindex="1" class="form-control" placeholder="Email Address" value="">
+                </div>
+                <div class="form-group">
+                  <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Password">
+                </div>
+                <div class="form-group">
+                  <input type="password" name="confirm-password" id="confirm-password" tabindex="2" class="form-control" placeholder="Confirm Password">
+                </div>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-xs-6 col-xs-offset-3">
+                      <input type="submit" name="register-submit" id="register-submit" tabindex="4" class="form-control btn btn-info" value="Register Now">
+                    </div>
+                  </div>
+                </div>
+                <input type="hidden" class="hide" name="token" id="token" value="7c6f19960d63f53fcd05c3e0cbc434c0">
+              </form>
+            </div>
+          </ul></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Log In <span class="caret"></span></a>
+          <ul class="dropdown-menu dropdown-lr animated slideInRight" role="menu" style="width: 300px">
+            <div class="col-lg-12">
+              <div class="text-center">
+                <h3><b>Log In</b></h3></div>
+              <form id="ajax-login-form" action="http://phpoll.com/login/process" method="post" role="form" autocomplete="off">
+                <div class="form-group">
+                  <label for="username">Username</label>
+                  <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Username" value="" autocomplete="off">
+                </div>
+
+                <div class="form-group">
+                  <label for="password">Password</label>
+                  <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Password" autocomplete="off">
+                </div>
+
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-xs-7">
+                      <input type="checkbox" tabindex="3" name="remember" id="remember">
+                      <label for="remember"> Remember Me</label>
+                    </div>
+                    <div class="col-xs-5 pull-right">
+                      <input type="submit" name="login-submit" id="login-submit" tabindex="4" class="form-control btn btn-success" value="Log In">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <div class="text-center">
+                        <a href="http://phpoll.com/recover" tabindex="5" class="forgot-password">Forgot Password?</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <input type="hidden" class="hide" name="token" id="token" value="a465a2791ae0bae853cf4bf485dbe1b6">
+              </form>
+            </div>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="https://i.pinimg.com/originals/67/18/22/671822c2f63dd5f65d8fd15c9710420b.jpg" alt="..." class="img-responsive">
+      <div class="carousel-caption">
+        Caption 1
+      </div>
+    </div>
+    <div class="item">
+      <img src="books.png" alt="..." class="img-responsive">
+      <div class="carousel-caption">
+       caption 2
+      </div>
+    </div>
+    <div class="item">
+      <img src="book.png" alt="..." class="img-responsive">
+      <div class="carousel-caption">
+       caption 2
+      </div>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<section>
+  <a href="#about"></a>
+  <div class="container-fluid">
+    <h1 style="text-align: center;font-size: 5rem;">About Us</h1>
+    <div class="row" style="width: 100%; padding: 30px" >
+      <div class="col-lg-1 col-md-1"></div>
+      <div class="col-lg-6 col-md-6 col-sm-6vcol-xs-6" style="text-align: justify; font-size: 18px;">
+        ergrgr r gtrtgrtyhty hyth y u jujujujuj 7uju7 ju7j u7ju7 juju7ju7ju7ju ju ju h6uh6yh6h 6uhj 6uj 6ujh uh6uh6 h6u hu hu ju hj uh 6hh ygtr f trgyh u6j ujujujuju hg tg t5 gt g tg 5 hu j u jh yt f rfrft56jhu jh uh uhuhhggtcrfvc gthbynhbg bjynjkjkhuhuh h hjgjg g hjghjggj  ggggghgh gg hhgjgg g hi huhhg gg yugyuguyg g g gyyugyug yug yug yuguyg ug yu gyu g ug uygy ug yu gyugyu g ygyuguy g yugyug y gyugygu yg   ggyugygygy gygg ergrgr r gtrtgrtyhty hyth y u jujujujuj 7uju7 ju7j u7ju7 juju7ju7ju7ju ju ju h6uh6yh6h 6uhj 6uj 6ujh uh6uh6 h6u hu hu ju hj uh 6hh ygtr f trgyh u6j ujujujuju hg tg t5 gt g tg 5 hu j u jh yt f rfrft56jhu jh uh uhuhhggtcrfvc gthbynhbg bjynjkjkhuhuh h hjgjg g hjghjggj  ggggghgh gg hhgjgg g hi huhhg gg yugyuguyg g g gyyugyug yug yug yuguyg ug yu gyu g ug uygy ug yu gyugyu g ygyuguy g yugyug y gyugygu yg   ggyugygygy gygg
+      </div>
+      <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 " style="align-items: center; text-align: center; vertical-align: center;">
+        <video class="vd" poster="images_unsplash_com-photo-1483104879057-379b6c2fe5a2.png" controls width="400px" height="240px">
+       <source src="https://youtu.be/mWRsgZuwf_8" poster="" type="video/mp4">
+      </video>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+</body>
+</html>

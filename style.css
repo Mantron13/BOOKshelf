@@ -68,12 +68,12 @@ td
   position:relative;
   text-align:right;
   margin-left: 90px;
-  height:450px;
+  height:500px;
   width:500px;}
 .gmap_canvas {
   overflow:hidden;
   background:none!important;
-  height:450px;width:500px;}
+  height:500px;width:500px;}
 @media (max-width: 600px){
   .mapouter{
     margin-left: 30%;

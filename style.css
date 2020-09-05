@@ -44,3 +44,22 @@ img{
   background-color: black;
   color: white;
 }
+.contact{
+  background-image: url(https://us.123rf.com/450wm/lusya/lusya1905/lusya190500065/123949922-old-books-on-the-shelf-dark-background-of-the-library-horizontal-photo-selective-focus-.jpg?ver=6);
+  padding: 30px;
+}
+td
+{
+    padding-left:15px;
+}
+
+.topgap
+{
+    margin-top:10%;
+}
+
+.buttonSubmit
+{
+    margin-top:10px;
+    margin-left:8px;
+}

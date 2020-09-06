@@ -1,11 +1,51 @@
 body{
   overflow-x: hidden;
+  width: 100%;
 }
 img{
   width:100%;
   max-width:100%;
 }
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #B22222;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 3px;
+  width: 90px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 4px;
+  margin-top: 10px;
+}
 
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
 .navbar{
   position:fixed;
   width:100%;
@@ -68,12 +108,12 @@ td
   position:relative;
   text-align:right;
   margin-left: 90px;
-  height:500px;
+  height:450px;
   width:500px;}
 .gmap_canvas {
   overflow:hidden;
   background:none!important;
-  height:500px;width:500px;}
+  height:450px;width:500px;}
 @media (max-width: 600px){
   .mapouter{
     margin-left: 30%;

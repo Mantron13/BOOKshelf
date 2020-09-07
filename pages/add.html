@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BOOKshelf</title>
+	<link rel="icon" type="image/png" href="../la.png">
+</head>
+<style type="text/css">
+	* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+	margin-top: 10px;
+}
+.hero {
+  position: relative;
+  border-radius: 10px;
+  margin: 0 10px;
+  background: #000;
+  padding: 20px;
+  z-index: 10;
+}
+.hero .nav {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+.hero ul li {
+  display: inline-block;
+  padding: 5px;
+  width: 100px;
+  font-size: 10pt;
+  border: 1px solid transparent;
+  list-style-type: none;
+  text-align: center;
+}
+.hero ul li a {
+  color: white;
+  text-decoration: none;
+}
+.hero ul li:hover {
+  border: 1px solid white;
+}
+.hero ul li h2 {
+  font-weight: normal;
+}
+.hero .shopping-cart {
+  position: absolute;
+  padding: 5px;
+  top: 20px;
+  right: 20px;
+  border: 1px solid transparent;
+  width: 100px;
+  text-align: center;
+  transition: 0.1s all ease-in-out;
+}
+.hero .shopping-cart:hover {
+  border: 1px solid white;
+}
+.hero .shopping-cart a {
+  text-decoration: none;
+  color: white;
+}
+.hero .shopping-cart a:visited {
+  color: white;
+}
+.hero .shopping-cart h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 12pt;
+}
+.hero .shopping-cart i {
+  font-size: 12pt;
+  margin-right: 10px;
+}
+.hero h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: white;
+}
+.hero form {
+  display: block;
+  position: relative;
+  height: 40px;
+  width: 230px;
+}
+.hero input {
+  height: 40px;
+  width: 230px;
+  border: 0;
+  border-radius: 40px;
+  padding-left: 45px;
+  outline: 0;
+}
+.hero button {
+  display: block;
+  height: 40px;
+  width: 35px;
+  border: 0;
+  position: relative;
+  top: -40px;
+  left: 13px;
+  background: transparent;
+  outline: 0;
+}
+.hero button i {
+  font-size: 12pt;
+  color: #ca5010;
+}
+.form fieldset {
+    border: 0;
+    margin-bottom: 50px;
+}
+fieldset legend {
+    margin-bottom: 10px;
+    color: black;
+}
+legend {
+    display: block;
+    padding-inline-start: 2px;
+    padding-inline-end: 2px;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+}
+.set input, .set select {
+    display: block;
+    border: 0;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 5px;
+    padding: 5px;
+}
+.name, .category {
+    width: 260px;
+    float: left;
+}
+.set label {
+    padding-left: 10px;
+    font-size: 10pt;
+}
+label {
+    cursor: default;
+}
+.name, .category {
+    width: 260px;
+    float: left;
+}
+.one, .two {
+    overflow: auto;
+}
+.hwd {
+    width: 160px;
+    float: left;
+}
+.margin {
+    margin-right: 40px;
+    }
+section {
+    padding: 10px 0;
+}    
+.two {
+    margin-top: 20px;
+}
+.cf {
+    width: 260px;
+    float: left;
+}
+.cf {
+    width: 260px;
+    float: left;
+}
+.image {
+    width: 100%;
+}
+.ad {
+    width: 260px;
+    float: left;
+}
+.nomargin {
+    margin-bottom: 0 !important;
+}
+fieldset button {
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 0;
+    background: #0078d4;
+    color: white;
+    border-radius: 5px;
+    float: right;
+}
+	.form {
+    width: 600px;
+    overflow: hidden;
+    background: #e5e5e5;
+    padding: 20px;
+    margin: 20px 20px 0 20px;
+    border-radius: 5px;
+}
+</style>
+<body>
+
+
+	<section class="hero">
+    <header>
+      <h1>
+        <img src="../logo.png" style="width: 17%; height: 100%; margin-top: -20px">
+      </h1>
+      <div class="nav">
+        <ul>
+          <li>
+            <a href="store.html">Home</a>
+          </li>
+          <li>
+            <a href="">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+      <div class="shopping-cart">
+        <a href="">
+          <h2>
+            <i class="fas fa-shopping-cart"></i>Cart (3)
+          </h2>
+        </a>
+      </div>
+      <form>
+        <input placeholder="Search Inventory..." type="search" /><button type="button"><i class="fas fa-search"></i></button>
+      </form>
+    </header>
+  </section>
+<section >
+<header>
+ <center> <h1>
+Add Item
+</h1></center>
+</header>
+
+<center>
+	<section class="form">
+<form>
+<fieldset>
+<legend>Name and Category</legend>
+<div class="set name margin">
+<input class="name" type="text"><label>Item Name</label>
+</div>
+<div class="set category">
+<select class="category nomargin">
+<option>
+Stationary Items
+</option>
+<option>
+Books
+</option>
+<option>
+Novels
+</option>
+<option>
+	Magazines
+</option>
+</select><label>Category</label>
+</div>
+</fieldset>
+<fieldset>
+<legend>Item Details</legend>
+<div class="one">
+<div class="set hwd margin">
+<input class="hwd" type="text"><label>Condition</label>
+</div>
+<div class="set hwd margin">
+<input class="hwd" type=""><label>Price</label>
+</div>
+<div class="set hwd">
+<input class="hwd" type="text"><label>Material</label>
+</div>
+</div>
+<div class="two">
+<div class="set cf margin">
+<input class="cf" type="text"><label>Color/Finish</label>
+</div>
+<div class="set cf">
+<input class="cf" type="text"><label>Type</label>
+</div>
+</div>
+</fieldset>
+<fieldset>
+<legend>Item Image</legend>
+<div class="set image">
+<input class="image" type="text">
+</div>
+</fieldset>
+<fieldset>
+<legend>Additional Details</legend>
+<div class="set ad margin">
+<input class="ad" type="text"><label>Quantity</label>
+</div>
+<div class="set ad">
+<select class="ad">
+<option>
+Yes
+</option>
+<option>
+No
+</option>
+</select><label>Featured Item</label>
+</div>
+</fieldset>
+<fieldset>
+<legend>Description</legend>
+<div class="set">
+<textarea rows="5"></textarea>
+</div>
+</fieldset>
+<fieldset class="nomargin">
+<button type="button">Add Item</button>
+</fieldset>
+</form>
+</section>
+</section>
+</center>
+
+</body>
+</html>

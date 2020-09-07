@@ -19,7 +19,7 @@ img{
   transition: all 0.5s;
   cursor: pointer;
   margin: 4px;
-  margin-top: 10px;
+  margin-top: 00px;
 }
 
 .button span {
@@ -58,9 +58,9 @@ img{
   color:#fff;
   
 }
-	.vd{
-		margin-top: 20px;
-	}
+  .vd{
+    margin-top: 20px;
+  }
   .card{
     margin-top: 20px;
     border-radius: 20px;
@@ -119,3 +119,4 @@ td
     margin-left: 30%;
   }
 }
+
